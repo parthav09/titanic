@@ -1,0 +1,7 @@
+TRAIN = "../input/train.csv"
+TEST = "../input/test.csv"
+TRAIN_CLEANED = "../input/train_cleaned.csv"
+TEST_CLEANED = "../input/test_clearned.csv"
+TRAIN_FOLDS = "../input/train_folds.csv"
+MODEL_OUTPUT = "../models"
+SAMPLE_SUBMISSION = "../input/gender_submission.csv"
