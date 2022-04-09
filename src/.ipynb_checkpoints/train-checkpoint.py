@@ -18,14 +18,10 @@ def run(fold, arg_model):
 
     # creating the training set
     df_train = df[df.kfold != fold].reset_index(drop=True)
-    
     # creating the validation set
     df_valid = df[df.kfold == fold].reset_index(drop=True)
-    
     X_train = df_train[features]
     X_valid = df_valid[features]
-    
-    y_train = df_train.Survived
     y_valid = df_valid.Survived
 
     model = model_dispatcher.models[arg_model]
